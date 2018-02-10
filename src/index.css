@@ -78,11 +78,11 @@ ul {
 .card_title:before {
   display: inline-block;
   width: 1em;
-  content: '>';
+  content: '\25b6';
 }
 
 .card_title--is-open:before {
-  content: 'd';
+  content: '\25bc';
 }
 
 .checklist_task:first-child {
