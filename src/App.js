@@ -35,6 +35,14 @@ let cardlist = [
         done: false
       }
     ]
+  },
+  {
+    id: 3,
+    title: "A new card with a super long description that is much longer than 80 characters. This will certainly fail the validation for this property.",
+    description: "",
+    status: "todo",
+    color: "",
+    tasks: []
   }
 ]
 
