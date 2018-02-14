@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom'; 
 import PropTypes from 'prop-types';
 import SearchBar from'./SearchBar';
 import ContactList from './ContactList';
