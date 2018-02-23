@@ -28,11 +28,29 @@ class KanbanBoardContainer extends Component {
             console.log('Error fetching and parsing data', error);
         });
     }
+
+    addTask(cardId, taskName) {
+        console.log('added!!!');
+    }
+
+    deleteTask(cardId, taskId, taskIndex) {
+        console.log('deleted!!!');
+    }
+
+    toggleTask(cardId, taskId, taskIndex) {
+        console.log('toggled!!!');
+    }
  
     render() {
 
         return (
-            <KanbanBoard cards={this.state.cards} />
+            <KanbanBoard cards={this.state.cards} 
+                taskCallbacks={{
+                    toggle: this.toggleTask.bind(this),
+                    delete: this.deleteTask.bind(this),
+                    add: this.addTask.bind(this)
+                }} 
+            />
         )
     }
 
